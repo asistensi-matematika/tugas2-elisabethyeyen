@@ -53,7 +53,11 @@
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
+                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+=======
                   <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
@@ -96,8 +100,13 @@
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                   <Component id="jTextField4" min="-2" pref="86" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+<<<<<<< HEAD
+                  <Component id="jTextField5" min="-2" pref="142" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+=======
                   <Component id="jTextField5" min="-2" pref="86" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,9 +126,15 @@
                       <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+<<<<<<< HEAD
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTextField2" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+=======
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField2" alignment="1" min="-2" max="-2" attributes="0"/>
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">

@@ -129,7 +129,11 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
+<<<<<<< HEAD
+                .addGap(92, 92, 92))
+=======
                 .addGap(75, 75, 75))
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -162,8 +166,13 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
+=======
                 .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60))
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,9 +188,15 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
+<<<<<<< HEAD
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+=======
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -223,6 +238,18 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
       double x = Double.parseDouble(nilaix);
       double a = Double.parseDouble(nilaia);
       double n = Double.parseDouble(nilain);
+<<<<<<< HEAD
+      double e = 2.718;
+      double ne = Math.pow(e, Math.pow(x,2));
+      double hasil2 = 0;
+      
+      for (double i=0;i<=n;i++){
+          double hasil1 = (Math.pow(2,i)*ne*Math.pow((x-a), i))/(faktorial ((int) i));
+          hasil2 = hasil1++;
+          String output = Double.toString(hasil2);
+          jTextField5.setText(output);
+      }
+=======
       double f0 = 0;
       
       if(x<0){
@@ -243,6 +270,7 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
           
       }else if(x>=0)
       {jTextField5.setText("Bilangan numerus dari persamaan tidak bole kurang dari nol ");}
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -270,6 +298,8 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
       double x = Double.parseDouble(nilaix);
       double a = Double.parseDouble(nilaia);
       double n = Double.parseDouble(nilain);
+<<<<<<< HEAD
+=======
       double e = 2.718;
       double ne = Math.pow(e, Math.pow(x,2));
       double hasil2 = 0;
@@ -289,6 +319,7 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
       double x = Double.parseDouble(nilaix);
       double a = Double.parseDouble(nilaia);
       double n = Double.parseDouble(nilain);
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
       double [] c = new double[10001];
       double function = 0;
       double es = 0.5*Math.pow(10,2-n);
@@ -303,9 +334,47 @@ public class ElisabethYeyenS_Tugas2 extends javax.swing.JFrame {
           double ea = ((c[i]-c[i-1])/c[i])*100;
           if(Math.abs(ea)<es){
               function += c[i];
+<<<<<<< HEAD
+              System.out.println(i);
               break;
           }
       }
+      jTextField5.setText(String.valueOf(function));
+      
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+      String nilaix = jTextField1.getText();
+      String nilaia = jTextField2.getText();
+      String nilain = jTextField3.getText();
+      double x = Double.parseDouble(nilaix);
+      double a = Double.parseDouble(nilaia);
+      double n = Double.parseDouble(nilain);
+      double f0 = 0;
+      
+      if(x<0){
+          f0 = Math.log(-x);
+          double hasil, hasilfganjil = 0, hasilfgenap = 0;
+          
+          for (double i=0;i<=n;i++){
+              double fganjil = (Math.pow((x-a), ((2*i)+1))/(Math.pow(x, ((2*1)+1)))*((2*i)+1));
+              hasilfganjil = fganjil++;
+          }
+          for (double j=1;j<=n;j++) {
+              double fgenap = (Math.pow((x-a), (2*j)))/(Math.pow(x, (2*j))*(2*j));
+              hasilfgenap = fgenap++;
+          }
+          hasil = f0 + hasilfgenap - hasilfganjil;
+          String output = Double.toString(hasil);
+          jTextField5.setText(output);
+          
+      }else if(x>=0)
+      {jTextField5.setText("Bilangan numerus dari persamaan tidak boleh kurang dari nol ");}  
+=======
+              break;
+          }
+      }
+>>>>>>> ab3616b6e82cea9bd7d1f81f78fc536c29fee68c
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
